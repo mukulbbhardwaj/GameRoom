@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   background: #000;
   position: relative;
@@ -8,7 +12,6 @@ body {
 body::after {
   content: "";
   width: 100%;
-  /* height: 100vh; */
   position: fixed;
   top: 0;
   background: url(https://becky.dev/assets/images/whitenoise-e05ce92bb85e9688f3fd742c6e4eb6bf.png);
@@ -19,14 +22,14 @@ body::after {
 }
 
 main {
+  padding: 1rem;
   width: 100%;
   text-align: center;
-  height: 90vh;
+  /* height: 90vh; */
+  height: 100vh;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   position: relative;
-  overflow-y: hidden;
+overflow: hidden;
   flex-direction: column;
   background-image: linear-gradient(
     90deg,
@@ -119,6 +122,12 @@ h1 {
 .heading {
   font-size: 64px;
   color: white;
+  margin: 10px 10px 100px 10px;
+}
+.trendingGames{
+  margin: 10px 10px 10px 10px;
+  line-height: 64px;
+  overflow: hidden;
 }
 
 .subHeading {
@@ -143,11 +152,20 @@ h1 {
   gap: 2rem;
   margin: 1rem;
   flex-wrap: wrap;
+    overflow: hidden;
 }
+
 .footer{
-  position: relative;
-  bottom: 1rem;
-  right: 1rem;
+
+}
+.links{
+  color: white;
+  padding: 4px;
+}
+.links:hover{
+  background-color: white;
+  color: black;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -159,5 +177,8 @@ h1 {
  }
  .subHeading{
   font-size: 32px;
+ }
+ .footer{
+  font-size: 14px;
  }
 }

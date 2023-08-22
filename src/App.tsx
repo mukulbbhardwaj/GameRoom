@@ -6,8 +6,8 @@ import { snakeLink, ramsetuLink } from "./projectLinks";
 
 function App() {
   return (
-    <main>
-      <h1 className="glowFlicker heading">Game Room</h1>
+    <main >
+      <h1 className="glowFlicker heading">Monke Play</h1>
       <div className="trendingGames">
         <h1 className="subHeading">Trending Games</h1>
         <div className="gameContainer">
@@ -16,7 +16,25 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <h5>Follow Me On : github</h5>
+        <h5>
+          Follow Me On :
+          <br/>
+          <a
+            className="links"
+            href="https://github.com/mukulbbhardwaj"
+            target="_blank"
+          >
+            github
+          </a>{" "}
+          &{" "}
+          <a
+            className="links"
+            href="https://twitter.com/mukulbbhardwaj"
+            target="_blank"
+          >
+            X
+          </a>
+        </h5>
       </div>
     </main>
   );
