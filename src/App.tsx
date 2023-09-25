@@ -2,7 +2,8 @@ import "./App.css";
 import GameItem from "./components/GameItem";
 import ramsetu from "./assets/gameIcons/RamSetu.png";
 import snake from "./assets/gameIcons/Snake.jpeg";
-import { snakeLink, ramsetuLink } from "./projectLinks";
+import saveMonke from './assets/gameIcons/saveMonke.png';
+import { snakeLink, ramsetuLink,saveMonkeLink } from "./projectLinks";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="gameContainer">
           <GameItem img={snake} projectLink={snakeLink} />
           <GameItem img={ramsetu} projectLink={ramsetuLink} />
+          <GameItem img={saveMonke} projectLink={saveMonkeLink} />
         </div>
       </div>
       <div className="footer">
